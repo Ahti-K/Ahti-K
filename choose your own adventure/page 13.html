@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            window.onload = function() {
+            if (localStorage.getItem('page1Loaded') === 'true') {
+                const elementsToHide = document.querySelectorAll('.hide');
+                elementsToHide.forEach(element => {
+                    element.style.display = 'none';
+                });
+
+                const element = document.getElementById('option_1');
+                if (element) {
+                    element.style.marginRight = 'auto';
+                }
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <img src="Mall Story text.png" alt="Mall Story">
+        <br> <br> <br>
+        <div class="big_box">
+            <div class="text_box">
+                <div class="text">
+                    <p>
+                        -You wait for the guy to go away only to realise that the door had locked itself.
+                    </p>
+                </div>
+                <div class="explanation">
+                    <hr>
+                    <p>
+                        - The changes of you managing the night in the freezer are slim and you don't know if you will survive.
+                    </p>
+                </div>
+            </div>
+            <div class="option_box">
+                <a href="page 17.html" id="option_1" class=" option option_1">
+                    <div><p>Freeze</p></div>
+                </a>
+                <p class="or hide">OR</p>
+                <a href="page 16.html" class="option hide option_2">
+                    <div><p>Use the Hat</p></div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

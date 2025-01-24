@@ -1,0 +1,77 @@
+body{
+    background-size: cover;
+    background-color:rgb(82, 94, 96);
+    background-image: url(BG.jpg);
+    background-blend-mode:multiply
+}
+img{
+    width:6cm;
+}
+h1{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(197, 226, 237);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(60, 92, 104);
+    font-weight: bold;
+}
+p{
+    font-size: 150%;
+}
+.big_box{
+    width: 53%;
+    border: 2px solid rgb(4, 49, 49);
+    margin:auto;
+    border-radius: 10px;
+}
+.text_box{
+    background-color: rgb(212, 212, 212);
+    padding: 4%;
+    min-height: 50%;
+    border-radius: 10px 10px 0 0;
+    line-height: 1.1;
+    position: relative;
+}
+.text{
+    margin-bottom: 13%;
+}
+.explanation{
+    position: absolute;
+    bottom: 3%;
+    width:92%;
+}
+.option_box{
+    background-color: rgb(138, 174, 183);
+    min-height: 14%;
+    border-radius: 0 0 10px 10px;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+.option{
+    border-radius: 30px;
+    width: 30%;
+    background-color: aliceblue;
+    padding-inline: 1%;
+    text-align: center;
+    line-height: 110%;
+    text-decoration: none;
+    color: black;
+}
+.option:hover{
+    background-color: rgb(125, 156, 163);
+    transition-duration: 0.3s;
+    color: aliceblue;
+}
+.option_1{
+    float: left;
+    margin-left: auto;
+}
+
+.option_2{
+    float: right;
+    margin-right: auto;
+}
+.or{
+    float: left;
+    padding: 2%;
+}

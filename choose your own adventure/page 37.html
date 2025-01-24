@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            window.onload = function() {
+            if (localStorage.getItem('page2Loaded') === 'true') {
+                const elementsToHide = document.querySelectorAll('.hide2');
+                elementsToHide.forEach(element => {
+                    element.style.display = 'none';
+                });
+
+                const element = document.getElementById('option_1');
+                if (element) {
+                    element.style.marginRight = 'auto';
+                }
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <img src="Mall Story text.png" alt="Mall Story">
+        <br> <br> <br>
+        <div class="big_box">
+            <div class="text_box">
+                <div class="text">
+                    <p>
+                    You- <br><br>
+                    I'll give you 20$ if you don't tell anybody and let me go.
+                    </p>
+                    <hr>
+                    <p>
+                    Night guard- <br><br>
+                    Lets see the money.
+                    </p>
+                </div>
+                <div class="explanation">
+                    <hr>
+                    <p>
+                        What will you do?
+                    </p>
+                </div>
+            </div>
+            <div class="option_box">
+                <a href="page 38.html" id="option_1" class=" option option_1">
+                    <div><p>Give the money</p></div>
+                </a>
+                <p class="or hide2">OR</p>
+                <a href="page 39 a.html" class="option hide2 option_2">
+                    <div><p>I know someone who can pay.</p></div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

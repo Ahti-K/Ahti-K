@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="quick event.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img src="Mall Story text.png" alt="Mall Story">
+        <br> <br> <br>
+        <div class="big_box">
+            <div class="text_box">
+                <p>
+                  Quick press the button!!
+                </p>
+            </div>
+           
+            <div class="option_box">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            
+                <button id="actionButton" class="option">Ladder</button>
+            
+                <script>
+                    const progressBar = document.getElementById('progressBar');
+                    const actionButton = document.getElementById('actionButton');
+                    let timeLeft = 1.5; // seconds
+                    const totalDuration = timeLeft; // Keep a record of total time
+            
+                    // Timer interval
+                    const timer = setInterval(() => {
+                        timeLeft -= 0.1;
+                        progressBar.style.width = (timeLeft / totalDuration) * 100 + '%';
+            
+                        if (timeLeft <= 0) {
+                            clearInterval(timer);
+                            window.location.href = 'page 30.html'; // Redirect when time runs out
+                        }
+                    }, 100);
+            
+                    // Button click handler
+                    actionButton.addEventListener('click', () => {
+                        clearInterval(timer);
+                        window.location.href = 'page 31.html'; // Redirect when button is clicked
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
